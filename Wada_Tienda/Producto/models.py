@@ -10,7 +10,7 @@ class Producto(models.Model):
 
 class Cliente_producto(models.Model):
     cliente = models.ForeignKey("Cliente.Cliente", on_delete=models.SET_NULL, null=True, blank=True)
-    producto = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True, blank=True,related_name='cliente_productos')
+    producto = models.ForeignKey(Producto, on_delete=models.SET_NULL, null=True, blank=True)
 
 
 
